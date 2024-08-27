@@ -3,8 +3,6 @@
 """
 Created on Wed Oct 25 19:33:42 2023
 
-@author: yusufhagimohamed
-"""
 
 def view_contacts(contacts):
     print(contacts)

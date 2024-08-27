@@ -3,8 +3,7 @@
 """
 Created on Wed Oct  4 23:18:15 2023
 
-@author: yusufhagimohamed
-"""
+
 
 print("*******WELCOME TO OUR BANK*******")
 

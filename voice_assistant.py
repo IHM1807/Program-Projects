@@ -3,19 +3,19 @@ import pyttsx3
 import mysql.connector
 from difflib import SequenceMatcher
 
-# Initialize TTS engine
+# Initialise TTS engine
 engine = pyttsx3.init()
 def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-# Fuzzy answer checker
+# Answer checker
 def is_answer_similar(correct_answer, user_answer):
     ratio = SequenceMatcher(None, correct_answer.lower(), user_answer.lower()).ratio()
     print(f"Match ratio: {ratio}")  # Debugging
     return ratio > 0.6
 
-# Initialize recognizer
+# Initialise recognizer
 recognizer = sr.Recognizer()
 
 # Connect to MySQL
@@ -78,6 +78,6 @@ def run_assistant():
     else:
         speak("Sorry, I don't understand. Please try again.")
 
-# Run it!
+# Run
 if __name__ == "__main__":
     run_assistant()
